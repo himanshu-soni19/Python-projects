@@ -30,6 +30,8 @@ def check_win(player, computer):
             return "Rock smashes scissors! You lose."
 
 
-choices = get_choices()
-result = check_win(choices["player"], choices["computer"])
-print(result)
+player_choice = ""
+while player_choice != "exit":
+    choices = get_choices()
+    result = check_win(choices["player"], choices["computer"])
+    print(result)
